@@ -16,6 +16,8 @@
 //    Barbara Ramos  Graphic Designer     barbara-ramos-graphic-designer.jpg
 
 
+
+// MILESTONE 0:
 const team = [
     {
         nominativo : "Wayne Barnett",
@@ -48,4 +50,21 @@ const team = [
         image: "barbara-ramos-graphic-designer.jpg"
     },
 ]
+
+// MILESTONE 1:
 console.log(team);
+
+// MILESTONE 2:
+
+const teamDiv = document.getElementById("team-info");
+
+let newDiv = document.createElement("div");
+
+newDiv.append(team);
+teamDiv.append(newDiv);
+
+for (let i=0; i<team.length; i++){
+    
+
+    
+}
