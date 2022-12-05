@@ -6,3 +6,46 @@
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+
+//     Wayne Barnett Founder & CEO        wayne-barnett-founder-ceo.jpg
+//    Angela Caroll  Chief Editor         angela-caroll-chief-editor.jpg
+//    Walter Gordon  Office Manager       walter-gordon-office-manager.jpg
+//    Angela Lopez   Social MediaManager  angela-lopez-social-media-manager.jpg
+//    Scott Estrada  Developer            scott-estrada-developer.jpg
+//    Barbara Ramos  Graphic Designer     barbara-ramos-graphic-designer.jpg
+
+
+const team = [
+    {
+        nominativo : "Wayne Barnett",
+        ruolo: "Founder & CEO",
+        image: "wayne-barnett-founder-ceo.jpg"
+    },
+    {
+        nominativo : "Angela Caroll",
+        ruolo: "Chief Editor",
+        image: " angela-caroll-chief-editor.jpg"
+    },
+    {
+        nominativo : "Walter Gordon",
+        ruolo: "Office Manager",
+        image: "walter-gordon-office-manager.jpg"
+    },
+    {
+        nominativo : "Angela Lopez",
+        ruolo: "Social Media Manager",
+        image: "angela-lopez-social-media-manager.jpg"
+    },
+    {
+        nominativo : "Scott Estrada",
+        ruolo: "Developer",
+        image: "scott-estrada-developer.jpg"
+    },
+    {
+        nominativo : "Barbara Ramos ",
+        ruolo: "Graphic Designer",
+        image: "barbara-ramos-graphic-designer.jpg"
+    },
+]
+console.log(team);
