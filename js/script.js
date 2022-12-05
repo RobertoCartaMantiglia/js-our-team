@@ -58,6 +58,9 @@ console.log(team);
 
 const teamDiv = document.getElementById("team-info");
 
+for (let i=0; i<team.length; i++){
+    let members = JSON.stringify(team[i]);     //json.stringify trasforma tutto il contenuto del oggetto in una stringa
+    teamDiv.append(members);
+}
 
-let members = JSON.stringify(team);
-teamDiv.append(members);
+
