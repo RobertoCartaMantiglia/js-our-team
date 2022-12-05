@@ -63,4 +63,17 @@ for (let i=0; i<team.length; i++){
     teamDiv.append(members);
 }
 
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
+
+
+for (let i=0; i<team.length; i++){
+    let image = team[i].image;
+    teamDiv.append(image);
+}
+
+
+// BONUS 2:
+// Organizzare i singoli membri in card/schede
+
 
