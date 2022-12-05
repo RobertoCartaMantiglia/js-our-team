@@ -58,13 +58,6 @@ console.log(team);
 
 const teamDiv = document.getElementById("team-info");
 
-let newDiv = document.createElement("div");
 
-newDiv.append(team);
-teamDiv.append(newDiv);
-
-for (let i=0; i<team.length; i++){
-    
-
-    
-}
+let members = JSON.stringify(team);
+teamDiv.append(members);
