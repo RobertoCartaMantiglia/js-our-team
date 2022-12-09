@@ -52,23 +52,27 @@ const team = [
 ]
 
 // MILESTONE 1:
-console.log(team);
+for(let i=0; i<team.length; i++){
+    console.log(team[i]);
+}
+
+
 
 // MILESTONE 2:
 
 const teamDiv = document.getElementById("team-info");
 
 for (let i=0; i<team.length; i++){
-    let members = JSON.stringify(team[i]);     //json.stringify trasforma tutto il contenuto del oggetto in una stringa
-    teamDiv.append(members);
+    
 }
 
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 
+let image;
 
 for (let i=0; i<team.length; i++){
-    let image = team[i].image;
+    image = `${image}`;
     teamDiv.append(image);
 }
 
