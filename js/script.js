@@ -6,7 +6,10 @@
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
-
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
+// BONUS 2:
+// Organizzare i singoli membri in card/schede
 
 //     Wayne Barnett Founder & CEO        wayne-barnett-founder-ceo.jpg
 //    Angela Caroll  Chief Editor         angela-caroll-chief-editor.jpg
@@ -27,7 +30,7 @@ const team = [
     {
         nominativo : "Angela Caroll",
         ruolo: "Chief Editor",
-        image: " angela-caroll-chief-editor.jpg"
+        image: "angela-caroll-chief-editor.jpg"
     },
     {
         nominativo : "Walter Gordon",
@@ -57,27 +60,19 @@ for(let i=0; i<team.length; i++){
 }
 
 
+// MILESTONE 2/ bonus1:
 
-// MILESTONE 2:
-
-const teamDiv = document.getElementById("team-info");
-
-for (let i=0; i<team.length; i++){
-    
-}
-
-// BONUS 1:
-// Trasformare la stringa foto in una immagine effettiva
-
-let image;
+let teamDiv = document.getElementById("team-info");
 
 for (let i=0; i<team.length; i++){
-    image = `${image}`;
-    teamDiv.append(image);
+    teamDiv.innerHTML +=
+    `<div class=" text-center p-3">
+        <img src="../img/${team[i].image}" class="img-fluid w-75 h-75" alt="">
+        <h2>${team[i].nominativo}</h2>
+        <p>${team[i].ruolo}</p>
+    </div>`
 }
 
 
-// BONUS 2:
-// Organizzare i singoli membri in card/schede
 
 
